@@ -1,0 +1,18 @@
+{
+  "name": "@camilaprav/makelovenotwar",
+  "version": "0.0.0",
+  "description": "PostCSS utility for per-element scoping of different CSS framework class names",
+  "type": "module",
+  "author": "Camila Prá",
+  "license": "ISC",
+  "bin": {
+    "makelovenotwar": "./makelovenotwar.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "commander": "^13.1.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-selector-parser": "^7.1.0"
+  }
+}
