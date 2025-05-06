@@ -1,6 +1,6 @@
 {
   "name": "@camilaprav/makelovenotwar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS utility for per-element scoping of different CSS framework class names",
   "type": "module",
   "author": "Camila Prá",

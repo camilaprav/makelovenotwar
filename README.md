@@ -6,11 +6,11 @@ A PostCSS CLI tool and browser-side enabler that scopes CSS frameworks (like Tai
 
 ## Why?
 
-When using multiple CSS frameworks on the same page, class name collisions (like `container`, `text-center`, etc.) are common. Tailwind offers a `prefix` option, but that requires rewriting every class and doesn’t help with framework interoperability.
+When using multiple CSS frameworks on the same page, class name collisions (like `container`, `text-center`, etc.) are common. Tailwind offers a `prefix` option, but that requires rewriting every class, so it's too verbose. Other frameworks don't even offer such option.
 
 **This tool solves that by:**
 
-* Transforming selectors like `.text-red-500` into `.tw.text-red-500`, so Tailwind utilities only activate when `class="tw text-red-500"` is present.
+* Transforming selectors like `.text-red-500` into `.tw.text-red-500`, so Tailwind utilities only activate when `class="tw"` is present.
 * Allowing Bootstrap and Bulma to be processed similarly (e.g., with `.bs`, `.bu`), enabling all three to coexist cleanly.
 * Eliminating the need descendant wrappers (can still cause conflicts) or class name prefixing (too verbose).
 
@@ -21,7 +21,7 @@ When using multiple CSS frameworks on the same page, class name collisions (like
 * 🔀 Namespace any CSS framework with a single opt-in class (e.g., `tw`, `bs`, `bu`)
 * 🧩 Keeps original class names intact
 * 📦 CLI tool for build-time processing
-* 🧪 Optional runtime support for Tailwind Play via MutationObserver workaround
+* 🧪 Optional runtime support for Tailwind Play via `MutationObserver` monstrosity
 
 ---
 
